@@ -1,0 +1,112 @@
+/* My fonts */
+/* My colors */
+/* Card dimensions */
+/* Business Card Mixin' */
+/* line 29, ../sass/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 33, ../sass/style.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/white_bed_sheet.png");
+  background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 44, ../sass/style.scss */
+.business-card {
+  height: 200px;
+  width: 320px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+/* line 55, ../sass/style.scss */
+.front {
+  border-radius: 15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  background-color: #36B1BF;
+  opacity: 1;
+}
+/* line 59, ../sass/style.scss */
+.front h1 {
+  font: "Oswald", sans-serif;
+  font-size: 52px;
+  padding: 30px 20px;
+  color: #E9F1DF;
+  font-weight: 700;
+}
+/* line 66, ../sass/style.scss */
+.front h2 {
+  font: "Old Standard TT", serif;
+  font-size: 30px;
+  color: #E9F1DF;
+}
+
+/* line 73, ../sass/style.scss */
+.front:hover {
+  opacity: 0;
+}
+
+/* line 77, ../sass/style.scss */
+.back {
+  border-radius: 15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  background-color: #4AD9D9;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+/* line 84, ../sass/style.scss */
+.back h1 {
+  font: "Oswald", sans-serif;
+  font-size: 52px;
+  padding: 30px 20px;
+  color: #E9F1DF;
+  font-weight: 700;
+}
+/* line 91, ../sass/style.scss */
+.back .social {
+  padding: 20px;
+}
+/* line 93, ../sass/style.scss */
+.back .social a {
+  color: #E9F1DF;
+  padding: 15px;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+/* line 99, ../sass/style.scss */
+.back .social a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* line 106, ../sass/style.scss */
+.back:hover {
+  opacity: 1;
+}
