@@ -93,10 +93,13 @@ body {
     a {
       color: $white;
       padding: 15px;
-      -webkit-transition: -webkit-transform 1s ease-in-out;
-              transition: transform 1s ease-in-out;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: -webkit-transform 1s ease-in;
+              transition: all 1s ease-in;
     }
-    a:hover {
+    i:before:hover {
       -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
               transform: scale(1.2);
