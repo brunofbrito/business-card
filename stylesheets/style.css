@@ -46,25 +46,26 @@ body {
 }
 /* line 59, ../sass/style.scss */
 .front h1 {
-  font: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 52px;
   padding: 30px 20px;
   color: #E9F1DF;
   font-weight: 700;
+  transition: 2s ease-in;
 }
-/* line 66, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .front h2 {
-  font: "Old Standard TT", serif;
+  font-family: "Old Standard TT", serif;
   font-size: 30px;
   color: #E9F1DF;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .front:hover {
   opacity: 0;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .back {
   border-radius: 15px;
   position: absolute;
@@ -80,29 +81,28 @@ body {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-/* line 84, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .back h1 {
-  font: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 52px;
   padding: 30px 20px;
   color: #E9F1DF;
   font-weight: 700;
+  transition: 2s ease-in;
 }
-/* line 91, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .back .social {
   padding: 20px;
 }
-/* line 93, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .back .social a {
   color: #E9F1DF;
   padding: 15px;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
+  transform: scale(1);
+  transition: all 1s ease-in forwards;
 }
-/* line 99, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .back .social a:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 

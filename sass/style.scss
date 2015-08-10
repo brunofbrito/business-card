@@ -57,14 +57,15 @@ body {
   background-color: $darkblue;
   opacity: 1;
   h1 {
-    font: $headingfont;
+    font-family: $headingfont;
     font-size: 52px;
     padding:30px 20px;
     color: $white;
     font-weight: 700;
+    transition: 2s ease-in;
   }
   h2 {
-    font: $bodyfont;
+    font-family: $bodyfont;
     font-size: 30px;
     color: $white;
   }
@@ -82,27 +83,23 @@ body {
   -webkit-transition: .3s ease-in-out;
           transition: .3s ease-in-out;
   h1 {
-    font: $headingfont;
+    font-family: $headingfont;
     font-size: 52px;
     padding:30px 20px;
     color: $white;
     font-weight: 700;
+    transition: 2s ease-in;
   }
   .social {
     padding: 20px;
     a {
       color: $white;
       padding: 15px;
-      -webkit-transform: scale(1);
-          -ms-transform: scale(1);
               transform: scale(1);
-      -webkit-transition: -webkit-transform 1s ease-in;
-              transition: all 1s ease-in;
-    }
-    i:before:hover {
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
+              transition: all 1s ease-in forwards;
+    &:hover {
               transform: scale(1.2);
+      }
     }
   }
 }
