@@ -95,11 +95,11 @@ body {
     a {
       color: $white;
       padding: 15px;
-              transform: scale(1);
-              transition: all 1s ease-in forwards;
-    &:hover {
-              transform: scale(1.2);
-      }
+      transform: scale(1);
+      transition: all 1s ease-in forwards;
+    }
+    a:hover {
+      transform: scale(1.2);
     }
   }
 }

@@ -101,7 +101,7 @@ body {
   transform: scale(1);
   transition: all 1s ease-in forwards;
 }
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .back .social a:hover {
   transform: scale(1.2);
 }
