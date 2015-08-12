@@ -2,6 +2,10 @@
 $headingfont: 'Oswald', sans-serif;
 $bodyfont: 'Old Standard TT', serif;
 
+/* Biz Card Height and Width */
+$height: 200px;
+$width: 320px;
+
 /* My colors */
 $red: #F2385A;
 $orange: #F5A503;
@@ -132,7 +136,7 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) { 
   .business-card {
-    height: 400px;
-    width: 640px;
+    height: #{($height*2)};
+    width: #{($width*2)};
   }
  }
