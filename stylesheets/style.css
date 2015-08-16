@@ -2,12 +2,12 @@
 /* Biz Card Height and Width */
 /* My colors */
 /* Business Card Mixin' */
-/* line 30, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 html {
   height: 100%;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 body {
   width: 100%;
   height: 100%;
@@ -19,7 +19,7 @@ body {
   display: flex;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .business-card {
   height: 200px;
   width: 320px;
@@ -27,7 +27,7 @@ body {
   position: relative;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .front {
   border-radius: 15px;
   position: absolute;
@@ -35,34 +35,46 @@ body {
   height: 100%;
   -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
   box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: #36B1BF;
   opacity: 1;
 }
-/* line 56, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .front h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
   color: #E9F1DF;
   font-weight: 700;
+  -webkit-transition: 2s ease-in;
   transition: 2s ease-in;
 }
-/* line 63, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .front h2 {
   font-family: "Old Standard TT", serif;
   font-size: 30px;
   color: #E9F1DF;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .front:hover {
   opacity: 0;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .back {
   border-radius: 15px;
   position: absolute;
@@ -70,9 +82,20 @@ body {
   height: 100%;
   -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
   box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: #4AD9D9;
   opacity: 0;
@@ -80,70 +103,128 @@ body {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-/* line 81, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .back h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
   padding: 30px 20px;
   color: #E9F1DF;
   font-weight: 700;
+  -webkit-transition: 2s ease-in;
   transition: 2s ease-in;
 }
-/* line 89, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .back .social {
   text-align: center;
 }
-/* line 91, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .back .social a {
   color: #E9F1DF;
   padding: 15px;
 }
-/* line 94, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .back .social a:hover {
+  -webkit-animation: grow 0.5s ease-in-out infinite alternate;
   animation: grow 0.5s ease-in-out infinite alternate;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .back:hover {
   opacity: 1;
 }
 
-@keyframes grow {
+@-webkit-keyframes grow {
   0% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 }
 /* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  /* line 131, ../sass/style.scss */
+  .business-card {
+    height: 300px;
+    width: 480px;
+  }
+
+  /* line 135, ../sass/style.scss */
+  .front {
+    background-color: #F2385A;
+  }
+  /* line 137, ../sass/style.scss */
+  .front h1 {
+    font-size: 80px;
+  }
+  /* line 140, ../sass/style.scss */
+  .front h2 {
+    font-size: 45px;
+  }
+
+  /* line 144, ../sass/style.scss */
+  .back {
+    background-color: #F5A503;
+  }
+
+  /* line 147, ../sass/style.scss */
+  .back .flex-back h1 {
+    font-size: 70px;
+  }
+}
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  /* line 119, ../sass/style.scss */
+  /* line 154, ../sass/style.scss */
   .business-card {
     height: 400px;
     width: 640px;
   }
 
-  /* line 124, ../sass/style.scss */
+  /* line 159, ../sass/style.scss */
   .front h1 {
     font-size: 80px;
   }
-  /* line 127, ../sass/style.scss */
+  /* line 162, ../sass/style.scss */
   .front h2 {
     font-size: 60px;
   }
 
-  /* line 131, ../sass/style.scss */
+  /* line 166, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 72px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  /* line 138, ../sass/style.scss */
+  /* line 173, ../sass/style.scss */
   .business-card {
     height: 400px;
     width: 640px;
+  }
+
+  /* line 178, ../sass/style.scss */
+  .front h1 {
+    font-size: 100px;
+  }
+  /* line 181, ../sass/style.scss */
+  .front h2 {
+    font-size: 60px;
+  }
+
+  /* line 185, ../sass/style.scss */
+  .back .flex-back h1 {
+    font-size: 90px;
   }
 }
