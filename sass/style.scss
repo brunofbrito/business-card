@@ -58,6 +58,13 @@ body {
   width: 320px;
   margin: auto;
   position: relative;
+  .tap-me {
+    color: $darkblue;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: $bodyfont;
+  }
 }
 
 .front {
@@ -131,6 +138,9 @@ body {
   .business-card {
     height: #{($height*1.5)};
     width: #{($width*1.5)};
+    .tap-me {
+      display:none;
+    }
   }
   .front {
     background-color: $red;
@@ -154,6 +164,9 @@ body {
   .business-card {
     height: #{($height*2)};
     width: #{($width*2)};
+    .tap-me {
+      display:none;
+    }
   }
   .front {
     h1 {
@@ -173,6 +186,9 @@ body {
   .business-card {
     height: #{($height*2)};
     width: #{($width*2)};
+    .tap-me {
+      display:none;
+    }
   }
   .front {
     h1 {
