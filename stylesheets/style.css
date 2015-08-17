@@ -33,9 +33,27 @@ body {
   text-align: center;
   font-size: 30px;
   font-family: "Old Standard TT", serif;
+  -webkit-animation: blink 1s 2;
+  animation: blink 1s 2;
 }
 
-/* line 70, ../sass/style.scss */
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+/* line 90, ../sass/style.scss */
 .front {
   border-radius: 15px;
   position: absolute;
@@ -61,7 +79,7 @@ body {
   background-color: #36B1BF;
   opacity: 1;
 }
-/* line 74, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .front h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
@@ -70,19 +88,19 @@ body {
   -webkit-transition: 2s ease-in;
   transition: 2s ease-in;
 }
-/* line 82, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .front h2 {
   font-family: "Old Standard TT", serif;
   font-size: 30px;
   color: #E9F1DF;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .front:hover {
   opacity: 0;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .back {
   border-radius: 15px;
   position: absolute;
@@ -111,7 +129,7 @@ body {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-/* line 100, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .back h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
@@ -121,22 +139,22 @@ body {
   -webkit-transition: 2s ease-in;
   transition: 2s ease-in;
 }
-/* line 109, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .back .social {
   text-align: center;
 }
-/* line 111, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .back .social a {
   color: #E9F1DF;
   padding: 15px;
 }
-/* line 114, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .back .social a:hover {
   -webkit-animation: grow 0.5s ease-in-out infinite alternate;
   animation: grow 0.5s ease-in-out infinite alternate;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .back:hover {
   opacity: 1;
 }
@@ -163,87 +181,87 @@ body {
 }
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* line 138, ../sass/style.scss */
+  /* line 158, ../sass/style.scss */
   .business-card {
     height: 300px;
     width: 480px;
   }
-  /* line 141, ../sass/style.scss */
+  /* line 161, ../sass/style.scss */
   .business-card .tap-me {
     display: none;
   }
 
-  /* line 145, ../sass/style.scss */
+  /* line 165, ../sass/style.scss */
   .front {
     background-color: #F2385A;
   }
-  /* line 147, ../sass/style.scss */
+  /* line 167, ../sass/style.scss */
   .front h1 {
     font-size: 80px;
   }
-  /* line 150, ../sass/style.scss */
+  /* line 170, ../sass/style.scss */
   .front h2 {
     font-size: 45px;
   }
 
-  /* line 154, ../sass/style.scss */
+  /* line 174, ../sass/style.scss */
   .back {
     background-color: #F5A503;
   }
 
-  /* line 157, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 70px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  /* line 164, ../sass/style.scss */
+  /* line 184, ../sass/style.scss */
   .business-card {
     height: 400px;
     width: 640px;
   }
-  /* line 167, ../sass/style.scss */
+  /* line 187, ../sass/style.scss */
   .business-card .tap-me {
     display: none;
   }
 
-  /* line 172, ../sass/style.scss */
+  /* line 192, ../sass/style.scss */
   .front h1 {
     font-size: 80px;
   }
-  /* line 175, ../sass/style.scss */
+  /* line 195, ../sass/style.scss */
   .front h2 {
     font-size: 60px;
   }
 
-  /* line 179, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 72px;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  /* line 186, ../sass/style.scss */
+  /* line 206, ../sass/style.scss */
   .business-card {
     height: 400px;
     width: 640px;
   }
-  /* line 189, ../sass/style.scss */
+  /* line 209, ../sass/style.scss */
   .business-card .tap-me {
     display: none;
   }
 
-  /* line 194, ../sass/style.scss */
+  /* line 214, ../sass/style.scss */
   .front h1 {
     font-size: 100px;
   }
-  /* line 197, ../sass/style.scss */
+  /* line 217, ../sass/style.scss */
   .front h2 {
     font-size: 60px;
   }
 
-  /* line 201, ../sass/style.scss */
+  /* line 221, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 90px;
   }
