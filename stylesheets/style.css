@@ -148,8 +148,8 @@ body {
   color: #E9F1DF;
   padding: 15px;
 }
-/* line 134, ../sass/style.scss */
-.back .social a:hover {
+/* line 135, ../sass/style.scss */
+.back .social .fa:hover {
   -webkit-animation: grow 0.5s ease-in-out infinite alternate;
   animation: grow 0.5s ease-in-out infinite alternate;
 }
@@ -162,16 +162,20 @@ body {
 @-webkit-keyframes grow {
   0% {
     -webkit-transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 @keyframes grow {
   0% {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
   100% {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 }
