@@ -57,6 +57,7 @@ html, body {
     opacity: 100%;
   }
 }
+
 @keyframes blink {
   0% {
     opacity: 0;
@@ -65,7 +66,7 @@ html, body {
     opacity: 100%;
   }
 }
-/* line 79, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .front {
   border-radius: 15px;
   position: absolute;
@@ -90,7 +91,7 @@ html, body {
   background-color: #36B1BF;
   opacity: 1;
 }
-/* line 83, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .front h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
@@ -99,19 +100,19 @@ html, body {
   -webkit-transition: 2s ease-in;
           transition: 2s ease-in;
 }
-/* line 90, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .front h2 {
   font-family: "Old Standard TT", serif;
   font-size: 30px;
   color: #E9F1DF;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .front:hover {
   opacity: 0;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .back {
   border-radius: 15px;
   position: absolute;
@@ -139,7 +140,7 @@ html, body {
   -webkit-transition: .3s ease-in-out;
           transition: .3s ease-in-out;
 }
-/* line 107, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .back h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
@@ -149,22 +150,22 @@ html, body {
   -webkit-transition: 2s ease-in;
           transition: 2s ease-in;
 }
-/* line 115, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .back .social {
   text-align: center;
 }
-/* line 117, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .back .social a {
   color: #E9F1DF;
   padding: 15px;
 }
-/* line 121, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .back .social .fa:hover {
   -webkit-animation: grow 0.5s ease-in-out infinite alternate;
           animation: grow 0.5s ease-in-out infinite alternate;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .back:hover {
   opacity: 1;
 }
@@ -172,25 +173,33 @@ html, body {
 @-webkit-keyframes grow {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @keyframes grow {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
-/* line 136, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .arrow-down a {
   color: black;
   text-decoration: none;
@@ -198,14 +207,14 @@ html, body {
   margin-bottom: 40px;
   opacity: 0.6;
 }
-/* line 142, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .arrow-down a:hover {
   -webkit-animation: grow 0.5s ease-in-out infinite alternate;
           animation: grow 0.5s ease-in-out infinite alternate;
   opacity: 1;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .portfolio {
   height: 100%;
   max-width: 1000px;
@@ -229,7 +238,7 @@ html, body {
           flex-direction: column;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .worktitle {
   margin-bottom: 20px;
   font-family: "Oswald", sans-serif;
@@ -237,7 +246,7 @@ html, body {
   text-align: center;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .project-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -252,7 +261,7 @@ html, body {
           justify-content: space-between;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .project {
   margin-top: 30px;
   margin-right: 30px;
@@ -275,19 +284,19 @@ html, body {
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
-/* line 183, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .project h1 {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   text-align: center;
   margin-bottom: 15px;
 }
-/* line 189, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .project p {
   font-family: "Old Standard TT", serif;
   line-height: 20px;
 }
-/* line 193, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .project .have-a-look {
   font-family: "Oswald", sans-serif;
   display: block;
@@ -297,12 +306,12 @@ html, body {
   text-decoration: none;
   text-align: center;
 }
-/* line 201, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .project .have-a-look:before {
   font-family: FontAwesome;
   content: "\f08e" " ";
 }
-/* line 206, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .project img {
   margin: 10px 0;
   width: 100%;
@@ -312,56 +321,56 @@ html, body {
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
-  /* line 216, ../sass/style.scss */
+  /* line 207, ../sass/style.scss */
   .portfolio {
     margin-top: 300px;
   }
 
-  /* line 219, ../sass/style.scss */
+  /* line 210, ../sass/style.scss */
   .project {
     margin: 40px auto;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 225, ../sass/style.scss */
+  /* line 216, ../sass/style.scss */
   .business-card {
     height: 300px;
     width: 480px;
   }
-  /* line 228, ../sass/style.scss */
+  /* line 219, ../sass/style.scss */
   .business-card .tap-me {
     display: none;
   }
 
-  /* line 232, ../sass/style.scss */
+  /* line 223, ../sass/style.scss */
   .front {
     background-color: #F2385A;
   }
-  /* line 234, ../sass/style.scss */
+  /* line 225, ../sass/style.scss */
   .front h1 {
     font-size: 80px;
   }
-  /* line 237, ../sass/style.scss */
+  /* line 228, ../sass/style.scss */
   .front h2 {
     font-size: 45px;
   }
 
-  /* line 241, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   .back {
     background-color: #F5A503;
   }
 
-  /* line 244, ../sass/style.scss */
+  /* line 235, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 70px;
   }
 
-  /* line 247, ../sass/style.scss */
+  /* line 238, ../sass/style.scss */
   .portfolio {
     margin-top: 100px;
   }
 
-  /* line 250, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   .project {
     background-color: #36B1BF;
     margin: 40px auto;
@@ -369,31 +378,31 @@ html, body {
 }
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  /* line 258, ../sass/style.scss */
+  /* line 249, ../sass/style.scss */
   .business-card {
     height: 400px;
     width: 640px;
   }
-  /* line 261, ../sass/style.scss */
+  /* line 252, ../sass/style.scss */
   .business-card .tap-me {
     display: none;
   }
 
-  /* line 266, ../sass/style.scss */
+  /* line 257, ../sass/style.scss */
   .front h1 {
     font-size: 80px;
   }
-  /* line 269, ../sass/style.scss */
+  /* line 260, ../sass/style.scss */
   .front h2 {
     font-size: 60px;
   }
 
-  /* line 273, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 72px;
   }
 
-  /* line 276, ../sass/style.scss */
+  /* line 267, ../sass/style.scss */
   .project {
     background-color: #36B1BF;
     margin-top: 30px;
@@ -402,26 +411,26 @@ html, body {
 }
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-  /* line 285, ../sass/style.scss */
+  /* line 276, ../sass/style.scss */
   .business-card {
     height: 400px;
     width: 640px;
   }
-  /* line 288, ../sass/style.scss */
+  /* line 279, ../sass/style.scss */
   .business-card .tap-me {
     display: none;
   }
 
-  /* line 293, ../sass/style.scss */
+  /* line 284, ../sass/style.scss */
   .front h1 {
     font-size: 100px;
   }
-  /* line 296, ../sass/style.scss */
+  /* line 287, ../sass/style.scss */
   .front h2 {
     font-size: 60px;
   }
 
-  /* line 300, ../sass/style.scss */
+  /* line 291, ../sass/style.scss */
   .back .flex-back h1 {
     font-size: 90px;
   }

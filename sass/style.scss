@@ -58,15 +58,6 @@ html, body {
   }
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
 @keyframes blink {
   0% {
     opacity: 0;
@@ -129,8 +120,8 @@ html, body {
 }
 
 @keyframes grow {
-  0% { -webkit-transform: scale(1); transform: scale(1); }
-  100% { -webkit-transform: scale(1.1); transform: scale(1.1); }
+  0% { transform: scale(1); transform: scale(1); }
+  100% { transform: scale(1.1); transform: scale(1.1); }
 }
 
 .arrow-down a {
