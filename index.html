@@ -3,31 +3,80 @@
   <head>
     <meta charset="UTF-8">
     <title>Bruno Brito's Work</title>
-    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="build/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Old+Standard+TT:400,700,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="build/style.css">
+    <link rel="stylesheet" href="build/lightbox.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="business-card">
-      <div class="tap-me">
-        <p><i class="fa fa-hand-o-down"></i> Tap me!</p>
-      </div>
-      <div class="front">
-        <h1>Bruno Brito</h1>
-        <h2>Web Developer</h2>
-      </div>
-      <div class="back">
-        <div class="flex-back">
-          <h1>Contact me</h1>
-          <div class="social">
-            <a href="https://github.com/brunofbrito" target="_blank"><i class="fa fa-github fa-3x"></i></a>
-            <a href="https://www.linkedin.com/in/brunobrito" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
-            <a href="mailto:brunofbrito@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+    <div class="container">
+      <div class="business-card">
+        <div class="tap-me">
+          <p><i class="fa fa-hand-o-down"></i> Tap me!</p>
+        </div>
+        <div class="front">
+          <h1>Bruno Brito</h1>
+          <h2>Web Developer</h2>
+        </div>
+        <div class="back">
+          <div class="flex-back">
+            <h1>Contact me</h1>
+            <div class="social">
+              <a href="https://github.com/brunofbrito" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+              <a href="https://www.linkedin.com/in/brunobrito" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+              <a href="mailto:brunofbrito@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+            </div>
           </div>
         </div>
       </div>
+      <div class="arrow-down">
+        <a href="#work"<i class="fa fa-arrow-circle-down"></i></a>
+      </div>
     </div>
+    <div class="portfolio">
+      <div class="worktitle" id="work">My Projects</div>
+      <div class="project-list">
+          <div class="project">
+            <h1>Rails Blog</h1>
+            <p>A simple blog that allows you to create blog posts and edit some blog settings (logo/background/social).</p>
+            <a href="img/rails-blog.png" data-lightbox="image-3" data-title="Rails Blog"><img src="img/rails-blog.png" alt="Rails Blog thumbnail"></a>
+            <a href="http://murmuring-sea-9192.herokuapp.com" class="have-a-look" target="_blank">Have a look</a>
+          </div>
+          <div class="project">
+            <h1>Rails Task Manager</h1>
+            <p>A minimalistic Task Manager that only stores your absolute top-priority 3 tasks for the day.</p>
+            <a href="img/3-tasks.png" data-lightbox="image-2" data-title="3 Tasks - Rails Task Manager"><img src="img/3-tasks.png" alt="3 Tasks thumbnail"></a>
+            <a href="http://ancient-gorge-6868.herokuapp.com" class="have-a-look" target="_blank">Have a look</a>
+          </div>
+          <div class="project">
+            <h1>My Personal Blog</h1>
+            <p>A Wordpress blog where I write about Online Marketing, Programming and Apps.</p>
+            <a href="img/brunobrito-blog.png" data-lightbox="image-1" data-title="Bruno Brito's personal blog"><img src="img/brunobrito-blog.png" alt="Bruno Brito's personal blog"/></a>
+            <a href="http://brunobrito.pt" target="_blank" class="have-a-look">Have a look</a>
+          </div>
+      </div>
+    </div>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script>
+      lightbox.option({
+        'showImageNumberLabel': false
+      });
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 750);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
