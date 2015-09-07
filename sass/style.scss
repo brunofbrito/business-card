@@ -137,16 +137,17 @@ html, body {
 }
 
 .portfolio {
-  height: 100%;
+  min-height: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .worktitle {
+  padding-top: 200px;
   margin-bottom: 20px;
   font-family: $headingfont;
   font-size: 50px;
@@ -204,9 +205,6 @@ html, body {
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
-  .portfolio {
-    margin-top: 300px;
-  }
   .project {
     margin: 40px auto;
   }
