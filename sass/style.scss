@@ -141,8 +141,6 @@ html, body {
   max-width: 1000px;
   margin: 40px auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -156,7 +154,6 @@ html, body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .project {
